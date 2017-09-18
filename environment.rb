@@ -1,9 +1,12 @@
 require 'active_record'
+require 'faker'
 
-Dir.glob('./lib/*').each do |folder|
-  Dir.glob(folder +"/*.rb").each do |file|
-    require file
-  end
+Dir.glob('./lib/*').each do |file|
+  require file
+end
+
+Dir.glob('./db/migrations/*').each do |file|
+  require file
 end
 
 ActiveRecord::Base.establish_connection(

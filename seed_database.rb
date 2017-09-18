@@ -1,6 +1,5 @@
 require 'faker'
 require_relative 'environment'
-require_relative 'lib/company'
 
 Company.destroy_all
 
