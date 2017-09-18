@@ -1,5 +1,3 @@
-require_relative '../../environment'
-
 class CreateCompanies < ActiveRecord::Migration[4.2]
 
   def up
@@ -14,5 +12,3 @@ class CreateCompanies < ActiveRecord::Migration[4.2]
   end
 
 end
-
-CreateCompanies.migrate(:up)
