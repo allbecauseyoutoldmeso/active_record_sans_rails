@@ -1,4 +1,3 @@
-require 'faker'
 require_relative 'environment'
 
 Company.destroy_all
